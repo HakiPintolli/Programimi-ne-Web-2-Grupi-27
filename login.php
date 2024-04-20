@@ -1,5 +1,32 @@
 <?php
+session_start();
 
+// Nëse përdoruesi është i loguar dhe emri i përdoruesit është 'username'
+if(isset($_SESSION['loggin']) && $_SESSION['loggin'] === true && $_SESSION['username'] === 'hakip') {
+    // Dërgojeni në index.php në vend të profile.php
+    header("Location: logedin.php");
+    exit;
+}
+
+// Nëse forma është submituar
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['user'];
+    $password = $_POST['password'];
+
+    // Kontrolloni dhe verifikoni të dhënat e përdoruesit (nëse janë të sakta)
+    if($username == 'hakip' && $password == '1234') {
+        // Krijoni sesion dhe shënoni përdoruesin si i loguar
+        $_SESSION['loggin'] = true;
+        $_SESSION['username'] = $username;
+
+        // Dërgoni përdoruesin në faqen e profilit ose faqen tjetër (për testim, në index.php)
+        header("Location: logedin.php");
+        exit;
+    } else {
+        // Nëse të dhënat janë të pasakta, shfaqeni një mesazh për përdoruesin
+        $error = "Të dhënat e logimit janë të pasakta. Ju lutem provoni përsëri.";
+    }
+}
 ?>
 
 <!DOCTYPE html>
