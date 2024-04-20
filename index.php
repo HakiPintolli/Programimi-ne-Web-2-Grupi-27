@@ -1,6 +1,7 @@
 <!-- Products  -->
 
 <?php
+
 ?>
 
 <!-- About  -->
@@ -42,11 +43,12 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#Reviews">Reviews</a></li>
                 <li><a href="#Services">Services</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
             <div class="icons">
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-user"><a href="login.php"></a></i>
             </div>
         </nav>
 
@@ -77,7 +79,8 @@
         </div>
     </section>
 
-    <!-- Products  -->
+    <!--Products -->
+
     <div class="products" id="Products">
         <h1>Products</h1>
 
@@ -308,6 +311,7 @@
 
         </div>
     </div>
+
 
     <!-- About  -->
 
@@ -560,40 +564,6 @@
         </div>
     </div>
 
-
-    <!-- Login Form  -->
-    <div class="login_form">
-        <div class="left">
-            <img src="image/logshoes.png" alt="shoes">
-        </div>
-
-        <div class="right">
-            <h1>Welcome Back!</h1>
-
-            <form action="#" method="post">
-                <p>User Name</p>
-                <div class="user">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" name="user" placeholder="User Name" class="username">
-                </div>
-
-                <p class="password_tag">Password</p>
-                <div class="password">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="text" name="password" placeholder="Password">
-                </div>
-
-                <p class="forget"> Forget Password ?</p>
-
-                <button type="submit">Login</button>
-                <div class="logging_icon">
-                    <a href="#"><img src="image/google.png" alt="google"></a>
-                    <a href="#"><img src="image/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="image/twitter.png" alt="twitter"></a>
-                </div>
-            </form>
-        </div>
-    </div>
 
 
     <!-- Footer  -->
