@@ -1,3 +1,4 @@
+
 <!-- Products  -->
 
 <?php
@@ -109,7 +110,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="#Products" class="btn">Add To Cart</a>
                 </div>
             </div>
 
@@ -137,7 +138,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="#Products" class="btn">Add To Cart</a>
                 </div>
             </div>
 
@@ -165,7 +166,7 @@
                         <i class="fa-solid fa-star-half-stroke"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="#Products" class="btn">Add To Cart</a>
                 </div>
             </div>
 
@@ -193,7 +194,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="#Products" class="btn">Add To Cart</a>
                 </div>
             </div>
 
@@ -221,7 +222,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="#Products" class="btn">Add To Cart</a>
                 </div>
             </div>
 
@@ -249,7 +250,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="#Products" class="btn">Add To Cart</a>
                 </div>
             </div>
 
@@ -277,7 +278,7 @@
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="#Products" class="btn">Add To Cart</a>
                 </div>
             </div>
 
@@ -305,7 +306,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
-                    <a href="#" class="btn">Add To Cart</a>
+                    <a href="#Products" class="btn">Add To Cart</a>
                 </div>
             </div>
 
