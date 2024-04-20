@@ -1,14 +1,14 @@
 function addToCart(productName) {
-    // Merr vlerën aktuale të cookies për produktet në shportë
+
     var cartProducts = JSON.parse(getCookie("cart_products"));
 
-    // Shto produktin në listën e produkteve në shportë
+
     cartProducts.push(productName);
 
-    // Rifresko vlerën e cookies për produktet në shportë
+
     setCookie("cart_products", JSON.stringify(cartProducts), 30);
 
-    // Njofto përdoruesin se produkti është shtuar në shportë (shembull)
+
     alert("Product added to cart: " + productName);
 }
 
@@ -29,7 +29,7 @@ function getCookie(cookieName) {
     return "";
 }
 
-// Funksion për të vendosur një cookie me emrin, vlerën, dhe ditët e skadimit
+
 function setCookie(cookieName, cookieValue, days) {
     var expires = "";
     if (days) {
