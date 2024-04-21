@@ -3,6 +3,135 @@
 
 <?php
 
+class Kepuce {
+    private $brendi;
+    private $modeli;
+    protected $cmimi;
+    public $stoku;
+
+    public function __construct($brendi, $modeli, $cmimi, $stoku) {
+
+        $this->brendi = $brendi;
+        $this->modeli = $modeli;
+        $this->cmimi = $cmimi;
+        $this->stoku = $stoku;
+
+    }
+    public function getBrendi() {
+        return $this->brendi;
+    }
+
+    public function setBrendi($brendi) {
+        $this->brand = $brand;
+    }
+
+    public function getModeli() {
+        return $this->modeli;
+    }
+
+    public function setModeli($modeli) {
+        $this->modeli = $modeli;
+    }
+
+    public function getCmimi() {
+        return $this->cmimi;
+    }
+
+    public function setCmimi($cmimi) {
+        $this->price = $price;
+    }
+ 
+    public function getStoku() {
+        return $this->stoku;
+    }
+
+    public function setStoku($stoku) {
+        $this->stoku = $stoku;
+    }
+
+    public function set($brendi, $modeli, $cmimi, $stoku) {
+        $this->brendi = $brendi;
+        $this->model = $modeli;
+        $this->price = $cmimi;
+        $this->stock = $stoku;
+    }
+
+
+    public function getInfo() {
+
+        return "Brendi: {$this->brendi}, Modeli: {$this->modeli}, Cmimi: {$this->cmimi}, Stoku: {$this->stoku}";
+
+    }
+
+
+    public function shikoGjendjen() {
+
+        if ($this->stoku > 0) {
+            return "Ne gjendje";
+        } else {
+         return "Nuk ka ne stok";
+        }
+    }
+
+
+    public function ZvogeloStokun($sasia) {
+
+        if ($this->stoku >= $sasia) {
+            $this->stoku -= $sasia;
+            return true; // Blerja u krye me sukses
+        } else {
+            return false; // Kepucet nuk jane ne sasi te mjaftueshme ne stok
+        }
+    }
+}
+
+$kepuce1 = new Kepuce("Nike", "Pegasus 30", 70, 10);
+
+echo "Detajet e Produktit: " . $kepuce1>getInfo() . "<br>";
+
+echo "Gjendja: " . $kepuce1->shikoGjendjen() . "<br>";
+
+$sasia_per_blerje = 2;
+
+if ($kepuce1->ZvogeloStokun($sasia_per_blerje)) {
+
+    echo "Blerja u krye me sukses! Sasia: " . $sasia_per_blerje . "<br>";
+
+} else {
+
+    echo "Blerja deshtoi! Nuk ka mbetur produkte ne stok.<br>";
+
+}
+
+echo "Gjendja e stokut pas blerjes: " . $kepuce1>shikoGjendjen() . "<br>";
+
+
+$kepuce1 = new Kepuce("Nike", "Pegasus 30", 70, 10);
+$kepuce1-> setCmimi(55);
+
+$kepuce1 = new Kepuce("Nike", "Pegasus 30", 70, 10);
+echo "Stoku: " . $kepuce1->getStoku() . "<br>";
+$kepuce1->getStoku(20);
+echo "Stoku i perditesuar: " . $kepuce1->getStoku() . "<br>";
+
+class KepuceFormale extends Kepuce {
+    private $materiali:
+    public function __construct($brendi, $modeli, $cmimi, $stoku, $materiali) {
+        parent:: __construct($brendi, $modeli, $cmimi, $stoku);
+        $this->materiali = $materiali;
+    }
+    //Metoda per te marre materialin e kepucave formale 
+    public function getMateriali() {
+        echo $this-> materiali;
+    }
+}
+
+$kepuceFormale = new KepuceFormale("Clarks", "Oxford", 99.99, 5, "Leather");
+
+
+echo $kepuceFormale->getInfo() . "<br>"
+echo "Materiali: " . $kepuceFormale->getMateriali() . "<br>";
+
 ?>
 
 <!-- About  -->
