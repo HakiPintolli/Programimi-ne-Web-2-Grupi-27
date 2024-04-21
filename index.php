@@ -3,6 +3,9 @@
 
 <?php
 
+
+<?php
+
 class Kepuce {
     private $brendi;
     private $modeli;
@@ -188,7 +191,7 @@ echo $sherbimet->suporti("123456", "Produkti nuk ka ardhur ne gjendje te mire.")
             </div>
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="#Products">Products</a></li>
+                <li><a href="products.php">Products</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Reviews">Reviews</a></li>
                 <li><a href="#Services">Services</a></li>
