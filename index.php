@@ -3,9 +3,6 @@
 
 <?php
 
-
-<?php
-
 class Kepuce {
     private $brendi;
     private $modeli;
