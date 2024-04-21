@@ -134,14 +134,33 @@ echo "Materiali: " . $kepuceFormale->getMateriali() . "<br>";
 
 ?>
 
-<!-- About  -->
-
+<!--Services-->
 <?php
-?>
+class Sherbimet {
+    public function dergesa($produkti, $adresa) {
 
- <!-- Services  -->
+        return "Produkti '{$produkti}' eshte derguar ne adresen {$adresa}.";
+    }
 
-<?php
+    public function kthimi($produkti, $arsyeja) {
+    
+        return "Produkti '{$produkti}' eshte kthyer per arsyen '{$arsyeja}'.";
+    }
+
+    public function suporti($klientID, $problemi) {
+        
+        return "Kostumeri me ID '{$klientID}' morri suport per problemin: {$problemi}";
+    }
+}
+
+$sherbimet = new Sherbimet();
+
+echo $sherbimet->dergesa("Nike Pegasus", "Bregu i Diellit, Prishtine, Kosove") . "<br>";
+
+echo $sherbimet->kthimi("Adidas Superstar", "Gabim ne numer") . "<br>";
+
+echo $sherbimet->suporti("123456", "Produkti nuk ka ardhur ne gjendje te mire.") . "<br>";
+
 ?>
 
 <!DOCTYPE html>
